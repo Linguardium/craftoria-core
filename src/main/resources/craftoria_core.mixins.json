@@ -1,17 +1,18 @@
 {
-    "required": true,
-    "package": "dev.wp.craftoria_core.mixin",
-    "plugin": "dev.wp.craftoria_core.mixin.MixinPlugin",
-    "compatibilityLevel": "JAVA_21",
-    "minVersion": "0.8",
-    "client": [
-        "ae2.KeySortersMixin",
-        "xycraft.XyCoreClientMixin"
-    ],
-    "mixins": [
-        "displaydelight.EmptyPlateBlockMixin",
-        "displaydelight.EmptySmallPlateBlockMixin",
-        "emi.ReloadWorkerMixin",
+  "required": true,
+  "package": "dev.wp.craftoria_core.mixin",
+  "plugin": "dev.wp.craftoria_core.mixin.MixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "ae2.KeySortersMixin",
+    "modpatches.justdirethings.PreventMobRenderReentrance",
+    "xycraft.XyCoreClientMixin"
+  ],
+  "mixins": [
+    "displaydelight.EmptyPlateBlockMixin",
+    "displaydelight.EmptySmallPlateBlockMixin",
+    "emi.ReloadWorkerMixin",
         "mynethersdelight.CommonEventMixin",
         "cable_facades.ServerInGameEventsMixin"
     ],
