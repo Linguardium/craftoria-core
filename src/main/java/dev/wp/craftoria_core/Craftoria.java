@@ -45,9 +45,9 @@ public class Craftoria {
     }
 
     private void init(IEventBus bus) {
-        CItems.init(bus);
-        CComponents.init(bus);
-        CCreativeTab.init(bus);
+//        CItems.init(bus);
+//        CComponents.init(bus);
+//        CCreativeTab.init(bus);
 
 //        if (ModList.get().isLoaded("ae2")) AE2Init.init(bus);
     }
