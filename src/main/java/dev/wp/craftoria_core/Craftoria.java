@@ -32,8 +32,11 @@ public class Craftoria {
     }
 
     private void onConfigReload(ModConfigEvent event) {
-        if (event.getConfig().getType() == ModConfig.Type.CLIENT) ClientConfig.init();
-        if (event.getConfig().getType() == ModConfig.Type.SERVER) ServerConfig.init();
+        if (event instanceof ModConfigEvent.Unloading) return;
+        var type = event.getConfig().getType();
+
+        if (type == ModConfig.Type.CLIENT) ClientConfig.init();
+        if (type == ModConfig.Type.SERVER) ServerConfig.init();
     }
 
     public static ResourceLocation id(@NotNull String path) {

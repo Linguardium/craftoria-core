@@ -6,7 +6,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
-@EventBusSubscriber(modid = Craftoria.ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = Craftoria.ID)
 public final class Datagen {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {

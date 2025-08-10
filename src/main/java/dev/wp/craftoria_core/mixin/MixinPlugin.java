@@ -31,6 +31,7 @@ public class MixinPlugin implements IMixinConfigPlugin {
         modStatus.put("mynethersdelight", mods.contains("mynethersdelight"));
         modStatus.put("cable_facades", mods.contains("cable_facades"));
         modStatus.put("xycraft_core", mods.contains("xycraft_core"));
+        modStatus.put("xycraft_machines", mods.contains("xycraft_machines"));
         modStatus.put("cataclysm", mods.contains("cataclysm"));
         modStatus.put("jdt", mods.contains("justdirethings"));
         modStatus.put("curios", mods.contains("curios"));
@@ -38,6 +39,7 @@ public class MixinPlugin implements IMixinConfigPlugin {
         // Client
         setMixinToMod("ae2.KeySortersMixin", "ae2emi");
         setMixinToMod("emi.ReloadWorkerMixin", "ae2emi");
+        setMixinToMod("xycraft.EnergyTooltipHelperMixin", "xycraft_machines");
         setMixinToMod("xycraft.XyCoreClientMixin", "xycraft_core");
 
         // Common
