@@ -27,28 +27,16 @@ public class Craftoria {
         container.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
 
         bus.addListener(this::onConfigReload);
-        init(bus);
 
         if (dist.isClient()) container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 
     private void onConfigReload(ModConfigEvent event) {
-        if (event instanceof ModConfigEvent.Unloading) return;
-        var type = event.getConfig().getType();
-
-        if (type == ModConfig.Type.CLIENT) ClientConfig.init();
-        if (type == ModConfig.Type.SERVER) ServerConfig.init();
+        if (event.getConfig().getType() == ModConfig.Type.CLIENT) ClientConfig.init();
+        if (event.getConfig().getType() == ModConfig.Type.SERVER) ServerConfig.init();
     }
 
     public static ResourceLocation id(@NotNull String path) {
         return ResourceLocation.fromNamespaceAndPath(ID, path);
-    }
-
-    private void init(IEventBus bus) {
-        CItems.init(bus);
-        CComponents.init(bus);
-        CCreativeTab.init(bus);
-
-//        if (ModList.get().isLoaded("ae2")) AE2Init.init(bus);
     }
 }

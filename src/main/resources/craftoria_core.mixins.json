@@ -8,7 +8,6 @@
         "ae2.KeySortersMixin",
         "emi.ReloadWorkerMixin",
         "minecraft.CreativeModeInventoryScreenMixin",
-        "xycraft.EnergyTooltipHelperMixin",
         "xycraft.XyCoreClientMixin"
     ],
     "mixins": [
