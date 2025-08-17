@@ -13,6 +13,7 @@
     ],
     "mixins": [
         "cataclysm.CursedTombstoneEntityMixin",
+        "cataclysm_spellbooks.SummonedKoboletonParticleFix",
         "curios.CuriosEventHandlerMixin",
         "foregoing.EnchantmentExtractorTileMixin",
         "foregoing.MobCrusherTileMixin",

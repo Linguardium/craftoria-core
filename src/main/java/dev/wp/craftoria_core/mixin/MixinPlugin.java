@@ -35,6 +35,7 @@ public class MixinPlugin implements IMixinConfigPlugin {
         modStatus.put("cataclysm", mods.contains("cataclysm"));
         modStatus.put("jdt", mods.contains("justdirethings"));
         modStatus.put("curios", mods.contains("curios"));
+        modStatus.put("cataclysm_spellbooks", mods.contains("cataclysm_spellbooks"));
 
         // Client
         setMixinToMod("ae2.KeySortersMixin", "ae2emi");
@@ -51,6 +52,7 @@ public class MixinPlugin implements IMixinConfigPlugin {
         setMixinToMod("jdt.CreatureCatcherEntityMixin", "jdt");
         setMixinToMod("jdt.UnstablePortalFluidTypeMixin", "jdt");
         setMixinToMod("curios.CuriosEventHandlerMixin", "curios");
+        setMixinToMod("cataclysm_spellbooks.SummonedKoboletonParticleFix", "cataclysm_spellbooks");
     }
 
     @Override

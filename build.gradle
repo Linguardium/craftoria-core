@@ -186,7 +186,7 @@ dependencies {
     compileOnly "curse.maven:industrial-foregoing-266515:6626624"
     compileOnly "curse.maven:titanium-287342:6443608"
 
-    compileOnly "curse.maven:lendercataclysm-551586:6501450"
+    compileOnly "curse.maven:lendercataclysm-551586:${cataclysm_version}"
     compileOnly "curse.maven:lionfish-api-1001614:6168249"
 
     runtimeOnly "dev.latvian.mods:kubejs-neoforge:${kubejs_version}"
@@ -198,6 +198,10 @@ dependencies {
     runtimeOnly "dev.shadowsoffire:ApothicEnchanting:${minecraft_version}-${apothEnchVersion}"
     runtimeOnly "dev.shadowsoffire:Apotheosis:${minecraft_version}-${apothVersion}"
 
+    // Cataclysm Spellbooks Version Incompat fix
+    implementation "curse.maven:irons-spells-n-spellbooks-855414:${irons_spells_version}"
+    implementation "curse.maven:cataclysm_spellbook-1099461:${cataclysm_spellbook_version}"
+    implementation "curse.maven:azure-lib-817423:${azure_lib_version}"
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
