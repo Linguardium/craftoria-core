@@ -198,6 +198,10 @@ dependencies {
     runtimeOnly "dev.shadowsoffire:ApothicEnchanting:${minecraft_version}-${apothEnchVersion}"
     runtimeOnly "dev.shadowsoffire:Apotheosis:${minecraft_version}-${apothVersion}"
 
+
+    implementation "curse.maven:building-gadgets-298187:5968587"
+    implementation "curse.maven:ender-storage-1-8-245174:6159037"
+    implementation "curse.maven:codechicken-lib-1-8-242818:6583751"
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html

@@ -1,28 +1,29 @@
 {
-    "required": true,
-    "package": "dev.wp.craftoria_core.mixin",
-    "plugin": "dev.wp.craftoria_core.mixin.MixinPlugin",
-    "compatibilityLevel": "JAVA_21",
-    "minVersion": "0.8",
-    "client": [
-        "ae2.KeySortersMixin",
-        "emi.ReloadWorkerMixin",
-        "minecraft.CreativeModeInventoryScreenMixin",
-        "xycraft.EnergyTooltipHelperMixin",
-        "xycraft.XyCoreClientMixin"
-    ],
-    "mixins": [
-        "cataclysm.CursedTombstoneEntityMixin",
-        "curios.CuriosEventHandlerMixin",
-        "foregoing.EnchantmentExtractorTileMixin",
-        "foregoing.MobCrusherTileMixin",
-        "jdt.CreatureCatcherEntityMixin",
-        "jdt.UnstablePortalFluidTypeMixin",
-        "minecraft.IdDispatchCodecMixin",
-        "mynethersdelight.CommonEventMixin",
-        "cable_facades.ServerInGameEventsMixin"
-    ],
-    "injectors": {
-        "defaultRequire": 1
-    }
+  "required": true,
+  "package": "dev.wp.craftoria_core.mixin",
+  "plugin": "dev.wp.craftoria_core.mixin.MixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "ae2.KeySortersMixin",
+    "emi.ReloadWorkerMixin",
+    "minecraft.CreativeModeInventoryScreenMixin",
+    "xycraft.EnergyTooltipHelperMixin",
+    "xycraft.XyCoreClientMixin",
+    "temp.BuildingGadgetsRenderDisable"
+  ],
+  "mixins": [
+    "cataclysm.CursedTombstoneEntityMixin",
+    "curios.CuriosEventHandlerMixin",
+    "foregoing.EnchantmentExtractorTileMixin",
+    "foregoing.MobCrusherTileMixin",
+    "jdt.CreatureCatcherEntityMixin",
+    "jdt.UnstablePortalFluidTypeMixin",
+    "minecraft.IdDispatchCodecMixin",
+    "mynethersdelight.CommonEventMixin",
+    "cable_facades.ServerInGameEventsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
